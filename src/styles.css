@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #12101d;
 }
 
@@ -8,8 +8,18 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/babymetal-2023.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,6 +29,7 @@ header {
 }
 
 header h1 {
+  font-family: "Playfair Display";
   font-weight: 700;
   font-size: 96px;
   line-height: 1;
@@ -55,7 +66,47 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url("../images/babymetal-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  size: 24px;
+  line-height: 31.99px;
+}
+
+footer p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.8;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
