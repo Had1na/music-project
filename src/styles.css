@@ -1,11 +1,16 @@
 body {
   font-family: "Roboto", sans-serif;
   background: #11101d;
+  color: #ffffff;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
@@ -21,10 +26,46 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: rgba(24, 21, 37, 0.7);
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 16px;
+  background: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  color: #11101d;
+  text-transform: uppercase;
+}
+
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/babymetal-songs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -32,7 +73,6 @@ header {
     url("../images/babymetal-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
   text-align: center;
   padding: 200px 0;
 }
@@ -100,7 +140,22 @@ main h3 {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.5;
-  color: #ffffff;
+  margin: 0;
+}
+
+main h4 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1px;
+  margin: 0;
+}
+
+main h5 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
   margin: 0;
 }
 
@@ -109,7 +164,6 @@ main p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #ffffff;
   opacity: 0.5;
 }
 
@@ -118,21 +172,20 @@ footer {
     url("../images/babymetal-footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
 }
 
 footer h3 {
   font-family: "Playfair Display";
   font-weight: 700;
   size: 24px;
-  line-height: 31.99px;
+  line-height: 1.5;
 }
 
 footer p {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   opacity: 0.8;
 }
 
