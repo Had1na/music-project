@@ -56,6 +56,11 @@ body {
   text-transform: uppercase;
 }
 
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 section {
   margin: 0 auto;
   padding: 100px;
