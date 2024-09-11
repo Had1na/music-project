@@ -61,6 +61,10 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+.spotify-embeds {
+  margin-top: 50px;
+}
+
 section {
   margin: 0 auto;
   padding: 100px;
@@ -224,6 +228,10 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  main h3 {
+    font-size: 20px;
   }
 
   .grid {
